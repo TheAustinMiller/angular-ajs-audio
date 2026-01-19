@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AJsAudio:build:production"
+              "buildTarget": "AJsAudio:build:production"
             },
             "development": {
-              "browserTarget": "AJsAudio:build:development"
+              "buildTarget": "AJsAudio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AJsAudio:build"
+            "buildTarget": "AJsAudio:build"
           }
         },
         "test": {
