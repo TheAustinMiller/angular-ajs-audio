@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class YoutubeService {
-  private apiUrl = 'http://localhost:3000';
+  private apiUrl = 'https://music-proxy-api.onrender.com';
 
   constructor(private http: HttpClient) {}
 
