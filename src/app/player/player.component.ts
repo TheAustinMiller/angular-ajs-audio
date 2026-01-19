@@ -1,8 +1,8 @@
 import { Component, Input, OnChanges } from '@angular/core';
 
 @Component({
-  selector: 'app-player',
-  template: `
+    selector: 'app-player',
+    template: `
     <iframe
       *ngIf="videoId"
       width="100%"
@@ -11,7 +11,8 @@ import { Component, Input, OnChanges } from '@angular/core';
       frameborder="0"
       allow="autoplay"
     ></iframe>
-  `
+  `,
+    standalone: false
 })
 export class PlayerComponent implements OnChanges {
   @Input() videoId!: string;

@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { YoutubeService } from './youtube.service';
 
 @Component({
-  selector: 'app-root',
-  template: `
+    selector: 'app-root',
+    template: `
     <h1>My Music App</h1>
 
     <input
@@ -22,7 +22,8 @@ import { YoutubeService } from './youtube.service';
     </ul>
 
     <app-player [videoId]="currentVideo"></app-player>
-  `
+  `,
+    standalone: false
 })
 export class AppComponent {
   query = '';
