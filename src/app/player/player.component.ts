@@ -1,0 +1,24 @@
+import { Component, Input, OnChanges } from '@angular/core';
+
+@Component({
+  selector: 'app-player',
+  template: `
+    <iframe
+      *ngIf="videoId"
+      width="100%"
+      height="80"
+      [src]="embedUrl"
+      frameborder="0"
+      allow="autoplay"
+    ></iframe>
+  `
+})
+export class PlayerComponent implements OnChanges {
+  @Input() videoId!: string;
+  embedUrl = '';
+
+  ngOnChanges() {
+    this.embedUrl =
+      `https://www.youtube.com/embed/${this.videoId}?autoplay=1`;
+  }
+}
