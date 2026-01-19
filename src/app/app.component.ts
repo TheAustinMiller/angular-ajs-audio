@@ -5,24 +5,25 @@ import { YoutubeService } from './youtube.service';
     selector: 'app-root',
     template: `
     <h1>My Music App</h1>
-
+    
     <input
       [(ngModel)]="query"
       placeholder="Search music..."
-    />
+      />
     <button (click)="search()">Search</button>
-
+    
     <ul>
-      <li
-        *ngFor="let v of videos"
-        (click)="play(v.id.videoId)"
-      >
-        {{ v.snippet.title }}
-      </li>
+      @for (v of videos; track v) {
+        <li
+          (click)="play(v.id.videoId)"
+          >
+          {{ v.snippet.title }}
+        </li>
+      }
     </ul>
-
+    
     <app-player [videoId]="currentVideo"></app-player>
-  `,
+    `,
     standalone: false
 })
 export class AppComponent {
