@@ -1,16 +1,40 @@
 <div class="header">
   <h1 class="logo">AJ's Audio</h1>
+  
+  <div class="now-playing">
+    @if (currentTitle) {
+      <span class="status-label">Now Playing: </span> 
+      <strong class="title-text">{{ currentTitle }}</strong>
+    } @else {
+      <span class="placeholder-text">Find something to play!</span>
+    }
+  </div>
 </div>
 
-<input [(ngModel)]="query" placeholder="Search music..." />
-<button (click)="search()">Search</button>
+<div class="search-container">
+  <div class="search-wrapper">
+    <span class="search-icon">🔍</span>
+    <input 
+      [(ngModel)]="query" 
+      placeholder="Search for artists, songs, or albums..." 
+      (keyup.enter)="search()" />
+    <button (click)="search()">Search</button>
+  </div>
+</div>
 
-<ul>
-  @for (v of videos; track v) {
-  <li (click)="play(v.id.videoId)">
-    {{ v.snippet.title }}
-  </li>
-  }
-</ul>
+<div class="playlist-container">
+  <ul class="playlist">
+    @for (v of videos; track v.id.videoId) {
+      <li (click)="play(v)" [class.active]="currentVideo === v.id.videoId">
+        <div class="track-info">
+          <span class="play-indicator">@if(currentVideo === v.id.videoId) {  } @else { ▶ }</span>
+          <span class="track-title">{{ v.snippet.title }}</span>
+        </div>
+      </li>
+    } @empty {
+      <div class="empty-state">Your search results will appear here.</div>
+    }
+  </ul>
+</div>
 
 <app-player [videoId]="currentVideo"></app-player>

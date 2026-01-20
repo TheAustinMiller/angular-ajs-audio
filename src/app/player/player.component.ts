@@ -14,12 +14,14 @@ export class PlayerComponent implements OnChanges {
 
   embedUrl?: SafeResourceUrl;
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor(private sanitizer: DomSanitizer) { }
 
   ngOnChanges() {
     if (this.videoId) {
+      const params = `?autoplay=1&modestbranding=1&rel=0&iv_load_policy=3&controls=1`;
+
       this.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
-        `https://www.youtube.com/embed/${this.videoId}?autoplay=1`
+        `https://www.youtube.com/embed/${this.videoId}${params}`
       );
     }
   }

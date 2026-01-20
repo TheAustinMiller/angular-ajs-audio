@@ -14,8 +14,9 @@ export class AppComponent {
   query = '';
   videos: any[] = [];
   currentVideo = '';
+  currentTitle: any;
 
-  constructor(private yt: YoutubeService) {}
+  constructor(private yt: YoutubeService) { }
 
   search() {
     this.yt.search(this.query).subscribe(res => {
@@ -23,7 +24,8 @@ export class AppComponent {
     });
   }
 
-  play(id: string) {
-    this.currentVideo = id;
+  play(video: any) {
+    this.currentVideo = video.id.videoId;
+    this.currentTitle = video.snippet.title.replace(/(\[.*?\]|\(.*?\))/g, '').trim();
   }
 }

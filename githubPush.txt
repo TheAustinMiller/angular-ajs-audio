@@ -9,5 +9,5 @@ Remove-Item -Recurse -Force docs\browser
 
 # Stage, commit, and push to main
 git add docs
-git commit -m "Fix issues with player posting to screen"
+git commit -m "Large UI overhaul"
 git push origin main
