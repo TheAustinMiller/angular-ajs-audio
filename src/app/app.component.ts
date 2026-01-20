@@ -1,30 +1,14 @@
 import { Component } from '@angular/core';
+import { PlayerComponent } from './player/player.component';
 import { YoutubeService } from './youtube.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-    selector: 'app-root',
-    template: `
-    <h1>My Music App</h1>
-    
-    <input
-      [(ngModel)]="query"
-      placeholder="Search music..."
-      />
-    <button (click)="search()">Search</button>
-    
-    <ul>
-      @for (v of videos; track v) {
-        <li
-          (click)="play(v.id.videoId)"
-          >
-          {{ v.snippet.title }}
-        </li>
-      }
-    </ul>
-    
-    <app-player [videoId]="currentVideo"></app-player>
-    `,
-    standalone: false
+  selector: 'app-root',
+  standalone: true,
+  imports: [PlayerComponent, FormsModule],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   query = '';

@@ -1,0 +1,13 @@
+# Build Angular into docs folder
+ng build --configuration production --output-path docs --base-href /angular-ajs-audio/ --no-source-map
+
+# Move all built files from browser/ up to docs/
+Move-Item -Path docs\browser\* -Destination docs\
+
+# Delete the now-empty browser folder
+Remove-Item -Recurse -Force docs\browser
+
+# Stage, commit, and push to main
+git add docs
+git commit -m "Fix issues with player posting to screen"
+git push origin main

@@ -1,26 +1,26 @@
 import { Component, Input, OnChanges } from '@angular/core';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
-    selector: 'app-player',
-    template: `
-    @if (videoId) {
-      <iframe
-        width="100%"
-        height="80"
-        [src]="embedUrl"
-        frameborder="0"
-        allow="autoplay"
-      ></iframe>
-    }
-    `,
-    standalone: false
+  selector: 'app-player',
+  standalone: true,
+  imports: [],
+  templateUrl: './player.component.html',
+  styleUrls: ['./player.component.css']
 })
 export class PlayerComponent implements OnChanges {
-  @Input() videoId!: string;
-  embedUrl = '';
+
+  @Input() videoId?: string;
+
+  embedUrl?: SafeResourceUrl;
+
+  constructor(private sanitizer: DomSanitizer) {}
 
   ngOnChanges() {
-    this.embedUrl =
-      `https://www.youtube.com/embed/${this.videoId}?autoplay=1`;
+    if (this.videoId) {
+      this.embedUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
+        `https://www.youtube.com/embed/${this.videoId}?autoplay=1`
+      );
+    }
   }
 }
