@@ -1,3 +1,5 @@
+<div class="hide"></div>
+
 <div class="header">
   <h1 class="logo">AJ's Audio</h1>
   
@@ -20,6 +22,14 @@
       (keyup.enter)="search()" />
     <button (click)="search()">Search</button>
   </div>
+</div>
+
+<div class="playlist-nav">
+  <button class="nav-btn" (click)="loadPlaylist('Favorites')">❤️ Favorites</button>
+  <button class="nav-btn" (click)="loadPlaylist('Country')">🤠 Country</button>
+  <button class="nav-btn" (click)="loadPlaylist('Hard')">🤘 Hard</button>
+  <button class="nav-btn" (click)="loadPlaylist('BigXThaPlug')">😎 BigXThaPlug</button>
+  <button class="nav-btn" (click)="loadPlaylist('3Pete')">💰 3Pete</button>
 </div>
 
 <div class="playlist-container">

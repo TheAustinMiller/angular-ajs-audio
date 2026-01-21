@@ -1,0 +1,79 @@
+export const MY_COLLECTIONS: any = {
+    'Favorites': [
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+    ],
+    'Country': [
+        { id: { videoId: 'bmWLBX_M0yA' }, snippet: { title: 'Luke Combs - Fast Car' } },
+        { id: { videoId: 'u9O-T7v4_vE' }, snippet: { title: 'Morgan Wallen - Last Night' } }
+    ],
+    'Hard': [
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+        { id: { videoId: 'gt_Oe2yGE4o' }, snippet: { title: 'EsDeeKid - 4Raws' } },
+    ],
+    'BigXThaPlug': [
+        // --- I Hope You're Happy ---
+        { id: { videoId: 'eb5BVhWUE1A' }, snippet: { title: 'BigXThaPlug - I Hope You\'re Happy (feat. Darius Rucker)' } },
+        { id: { videoId: 'p-4ofoKX1Gg' }, snippet: { title: 'BigXThaPlug - All The Way (feat. Bailey Zimmerman)' } },
+        { id: { videoId: 'VQpmWQU5_8E' }, snippet: { title: 'BigXThaPlug - Hell At Night (feat. Ella Langley)' } },
+        { id: { videoId: 'a3HpVeroFq0' }, snippet: { title: 'BigXThaPlug - Pray Hard (feat. Luke Combs)' } },
+        { id: { videoId: 'fK_IxSNLF_I' }, snippet: { title: 'BigXThaPlug - Home (feat. Shaboozey)' } },
+        { id: { videoId: 'o0qiPAYID1s' }, snippet: { title: 'BigXThaPlug - Long Nights (feat. Thomas Rhett)' } },
+        { id: { videoId: 'QPmGzXoXYW8' }, snippet: { title: 'BigXThaPlug - Holy Ground (feat. Jessie Murph)' } },
+
+        // --- TAKE CARE ---
+        { id: { videoId: '2YsPP7b38K0' }, snippet: { title: 'BigXThaPlug - Take Care' } },
+        { id: { videoId: 'eQAFAoyXpcw' }, snippet: { title: 'BigXThaPlug - Lost The Love' } },
+        { id: { videoId: 'begbi44ZLqw' }, snippet: { title: 'BigXThaPlug - Change Me' } },
+        { id: { videoId: 'a3HoLmCAwUA' }, snippet: { title: 'BigXThaPlug - Leave Me Alone' } },
+        { id: { videoId: '0vl4FamxfUs' }, snippet: { title: 'BigXThaPlug - Therapy Session' } },
+        { id: { videoId: 'gUTRomHXkRw' }, snippet: { title: 'BigXThaPlug - Planting Seeds' } },
+        { id: { videoId: 'TNBeHlll0PE' }, snippet: { title: 'BigXThaPlug - Law & Order' } },
+        { id: { videoId: '2aEs3Mv4uPw' }, snippet: { title: 'BigXThaPlug - Back On My BS' } },
+        { id: { videoId: 'JVDUsaqgSq0' }, snippet: { title: 'BigXThaPlug - 2AM' } },
+        { id: { videoId: 'kYzt_wtLF1U' }, snippet: { title: 'BigXThaPlug - Story of X' } },
+        { id: { videoId: '3QwZjhHcLZk' }, snippet: { title: 'BigXThaPlug - The Largest' } },
+        { id: { videoId: 'O3b2dbwT5qA' }, snippet: { title: 'BigXThaPlug - Mmhmm' } },
+        { id: { videoId: 'W-Btg-OmcKE' }, snippet: { title: 'BigXThaPlug - Rich Off Rap' } },
+        { id: { videoId: 'ZmfGEB2rGJA' }, snippet: { title: 'BigXThaPlug - They Don\'t Know' } },
+
+        // --- THE BIGGEST ---
+        { id: { videoId: 'Z97O5zBF2W0' }, snippet: { title: 'BigXThaPlug - Climate (feat. Offset)' } },
+        { id: { videoId: '5fGfUBVQ0iw' }, snippet: { title: 'BigXThaPlug - Rock and Roll' } },
+        { id: { videoId: 'LvJuTsrPY_Y' }, snippet: { title: 'BigXThaPlug - Patience' } },
+
+        // --- AMAR (Deluxe) ---
+        { id: { videoId: 'u9AYK1ZZgec' }, snippet: { title: 'BigXthaPlug - Switched Up' } },
+        { id: { videoId: 'iXi4pWO_t5c' }, snippet: { title: 'BigXthaPlug - Rush Hour' } },
+        { id: { videoId: 'heReJ7eThrg' }, snippet: { title: 'BigXthaPlug - Primetime' } },
+        { id: { videoId: 'hX0aI5Jz8i8' }, snippet: { title: 'BigXthaPlug - Texas' } },
+        { id: { videoId: 'HC-dvVQ6m8A' }, snippet: { title: 'BigXthaPlug - Bad Bitches (feat. Ro$ama)' } },
+        { id: { videoId: 'RW-epTbUCkQ' }, snippet: { title: 'BigXthaPlug - Bacc to Tha Basics' } },
+        { id: { videoId: '1t77q_Dykac' }, snippet: { title: 'BigXthaPlug - Safehouse' } },
+        { id: { videoId: 'wRmilfAVblw' }, snippet: { title: 'BigXthaPlug - Change' } },
+        { id: { videoId: '66GELkCzvz0' }, snippet: { title: 'BigXthaPlug - Badu Flow' } },
+        { id: { videoId: 'syEJHYSkH-o' }, snippet: { title: 'BigXthaPlug - I Know (feat. Sauce Walka)' } },
+        { id: { videoId: '8qz_dkR2e7U' }, snippet: { title: 'BigXthaPlug - Levels' } },
+        { id: { videoId: 'izaMfYCitIE' }, snippet: { title: 'BigXthaPlug - Thick (feat. Erica Banks & Tay Money)' } },
+        { id: { videoId: '7PhMq1ztAm8' }, snippet: { title: 'BigXthaPlug - Dream' } },
+        { id: { videoId: 'KmEtbvCzfrU' }, snippet: { title: 'BigXthaPlug - Whip It' } },
+        { id: { videoId: 'DN8VnToyp70' }, snippet: { title: 'BigXthaPlug - Left Eye' } },
+        { id: { videoId: '9Jl0zqBVnxU' }, snippet: { title: 'BigXthaPlug - Rap Niggas (feat. Ro$ama)' } },
+        { id: { videoId: 'fLg7si7UuvU' }, snippet: { title: 'BigXthaPlug - Ends' } }
+    ],
+    '3Pete': [
+        { id: { videoId: '_DkPOeT8Rxo' }, snippet: { title: '3Pete - DNA' } },
+        { id: { videoId: '0Ns36QwDHX8' }, snippet: { title: '3Pete - Clip Farmer' } },
+        { id: { videoId: 'Bt_iYAiaWVk' }, snippet: { title: '3Pete - On The Run' } },
+        { id: { videoId: 'KbVPIQnXzhE' }, snippet: { title: '3Pete - All Night' } },
+        { id: { videoId: 'yQ1NfM7oKj0' }, snippet: { title: '3Pete - Get Lost' } }
+    ]
+};

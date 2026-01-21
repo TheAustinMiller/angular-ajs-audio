@@ -133,3 +133,51 @@ li.active::before {
     color: #666;
     margin-top: 40px;
 }
+
+.playlist-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+    margin: 0 20px 25px 20px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+}
+
+.playlist-nav::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-btn {
+    flex: 0 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ccc;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.nav-btn:active {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(0.95);
+}
+
+.nav-btn.active-playlist {
+    background: #fff;
+    color: #262626;
+    border-color: #fff;
+    font-weight: 600;
+}
+
+.hide {
+    position: sticky;
+    top: 0;
+    margin: 0 20px;
+    height: 20px;
+    background-color: #262626;
+    z-index: 1001;
+}
