@@ -53,5 +53,17 @@ export const ALBUMS: Album[] = [
         artist: 'Kanye West',
         coverArt: 'https://upload.wikimedia.org/wikipedia/en/f/f1/808s_%26_Heartbreak.png',
         collectionKey: '808sHeartbreak'
+    },
+    {
+        title: 'My Beautiful Dark Twisted Fantasy',
+        artist: 'Kanye West',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/My_Beautiful_Dark_Twisted_Fantasy.jpg/250px-My_Beautiful_Dark_Twisted_Fantasy.jpg',
+        collectionKey: 'MBDTF'
+    },
+    {
+        title: 'Watch The Throne',
+        artist: 'JAY-Z & Kanye West',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Watch_The_Throne.jpg/250px-Watch_The_Throne.jpg',
+        collectionKey: 'WatchTheThrone'
     }
 ];
