@@ -17,7 +17,7 @@ export class AppComponent {
   videos: any[] = [];
   currentVideo = '';
   currentTitle: any;
-  
+
   albumLibrary = ALBUMS;
   activeAlbum?: Album;
 
@@ -26,7 +26,7 @@ export class AppComponent {
   }
 
   loadPlaylist(genre: string) {
-    this.activeAlbum = undefined; 
+    this.activeAlbum = undefined;
     this.videos = MY_COLLECTIONS[genre];
   }
 
@@ -40,6 +40,14 @@ export class AppComponent {
     this.yt.search(this.query).subscribe(res => {
       this.videos = res.items;
     });
+  }
+
+  get currentIndex(): number {
+    return this.videos.findIndex(v => v.id.videoId === this.currentVideo);
+  }
+
+  get currentIdList(): string[] {
+    return this.videos.map(v => v.id.videoId);
   }
 
   play(video: any) {
