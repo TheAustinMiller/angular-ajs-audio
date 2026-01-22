@@ -3,6 +3,7 @@ import { PlayerComponent } from './player/player.component';
 import { YoutubeService } from './youtube.service';
 import { FormsModule } from '@angular/forms';
 import { MY_COLLECTIONS } from './music-data';
+import { Album, ALBUMS } from 'src/album-data';
 
 @Component({
   selector: 'app-root',
@@ -16,16 +17,26 @@ export class AppComponent {
   videos: any[] = [];
   currentVideo = '';
   currentTitle: any;
+  
+  albumLibrary = ALBUMS;
+  activeAlbum?: Album;
 
   constructor(private yt: YoutubeService) {
     this.videos = MY_COLLECTIONS['Favorites'];
   }
 
   loadPlaylist(genre: string) {
+    this.activeAlbum = undefined; 
     this.videos = MY_COLLECTIONS[genre];
   }
 
+  loadAlbum(album: Album) {
+    this.activeAlbum = album;
+    this.videos = MY_COLLECTIONS[album.collectionKey];
+  }
+
   search() {
+    this.activeAlbum = undefined;
     this.yt.search(this.query).subscribe(res => {
       this.videos = res.items;
     });

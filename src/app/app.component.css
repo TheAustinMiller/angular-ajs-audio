@@ -181,3 +181,66 @@ li.active::before {
     background-color: #262626;
     z-index: 1001;
 }
+
+/* Album Navigation */
+.album-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 0 20px 20px;
+  scrollbar-width: none;
+}
+
+.album-card {
+  flex: 0 0 110px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.album-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+  transition: transform 0.2s;
+}
+
+.album-card:hover img { transform: scale(1.05); }
+.album-card p { font-size: 0.7rem; margin-top: 5px; color: #aaa; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+/* Album Hero Section */
+.album-hero {
+  position: relative;
+  overflow: hidden;
+  margin: 0 20px 20px;
+  border-radius: 12px;
+  padding: 40px 20px;
+  background: #333; /* Fallback */
+}
+
+.hero-blur {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  filter: blur(40px) brightness(0.4);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.main-art {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.5);
+}
+
+.hero-text .badge { font-size: 0.6rem; font-weight: bold; color: #1db954; }
+.hero-text h2 { margin: 5px 0; font-size: 1.8rem; }
+.hero-text p { color: #ccc; margin: 0; }

@@ -9,5 +9,5 @@ Remove-Item -Recurse -Force docs\browser
 
 # Stage, commit, and push to main
 git add docs
-git commit -m "Large UI overhaul"
+git commit -m "Create distributable package for site"
 git push origin main

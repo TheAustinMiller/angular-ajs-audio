@@ -32,6 +32,28 @@
   <button class="nav-btn" (click)="loadPlaylist('3Pete')">💰 3Pete</button>
 </div>
 
+<div class="album-scroll">
+  @for (album of albumLibrary; track album.title) {
+    <div class="album-card" (click)="loadAlbum(album)" [class.selected]="activeAlbum === album">
+      <img [src]="album.coverArt" />
+      <p>{{ album.title }}</p>
+    </div>
+  }
+</div>
+
+@if (activeAlbum) {
+  <div class="album-hero">
+    <img [src]="activeAlbum.coverArt" class="hero-blur" /> <div class="hero-content">
+      <img [src]="activeAlbum.coverArt" class="main-art" />
+      <div class="hero-text">
+        <span class="badge">ALBUM</span>
+        <h2>{{ activeAlbum.title }}</h2>
+        <p>{{ activeAlbum.artist }}</p>
+      </div>
+    </div>
+  </div>
+}
+
 <div class="playlist-container">
   <ul class="playlist">
     @for (v of videos; track v.id.videoId) {
