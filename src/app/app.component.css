@@ -201,6 +201,14 @@ li.active::before {
   cursor: pointer;
 }
 
+.album-card p {
+  width: 110px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 5px auto;
+}
+
 .album-card img {
   width: 100%;
   aspect-ratio: 1/1;
