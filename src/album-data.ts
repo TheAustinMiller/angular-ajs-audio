@@ -7,6 +7,12 @@ export interface Album {
 
 export const ALBUMS: Album[] = [
     {
+        title: 'Rebel',
+        artist: 'EsDeeKid',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/c4/EsDeeKid_-_Rebel.jpg/250px-EsDeeKid_-_Rebel.jpg',
+        collectionKey: 'Rebel'
+    },
+    {
         title: 'I Hope You\'re Happy',
         artist: 'BigXthaPlug',
         coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/BigXthaPlug_-_I_Hope_You%27re_Happy.jpg/250px-BigXthaPlug_-_I_Hope_You%27re_Happy.jpg',
@@ -65,5 +71,35 @@ export const ALBUMS: Album[] = [
         artist: 'JAY-Z & Kanye West',
         coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/ee/Watch_The_Throne.jpg/250px-Watch_The_Throne.jpg',
         collectionKey: 'WatchTheThrone'
+    },
+    {
+        title: 'Yeezus',
+        artist: 'Kanye West',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Yeezus_album_cover.png/250px-Yeezus_album_cover.png',
+        collectionKey: 'Yeezus'
+    },
+    {
+        title: 'The Life of Pablo',
+        artist: 'Kanye West',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/The_life_of_pablo_alternate.jpg/250px-The_life_of_pablo_alternate.jpg',
+        collectionKey: 'TLOP'
+    },
+    {
+        title: 'ye',
+        artist: 'Kanye West',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/en/7/74/Ye_album_cover.jpg',
+        collectionKey: 'ye'
+    },
+    {
+        title: 'JESUS IS KING',
+        artist: 'Kanye West',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/en/a/a4/Kanye_West_-_Jesus_Is_King.png',
+        collectionKey: 'JesusIsKing'
+    },
+    {
+        title: 'Donda (Deluxe)',
+        artist: 'Kanye West',
+        coverArt: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Almost_black_square_020305.svg/250px-Almost_black_square_020305.svg.png',
+        collectionKey: 'DondaDeluxe'
     }
 ];
